@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body{
+	font-family: "Montserrat";
+}
+header{
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%),url("imagens/bg-hero.jpg");
+	padding: 50px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.initialbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+
+.initialbar a{
+	color: white;
+}
+
+.botton-signup{
+	border: 2px solid white;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.initialbar .botton-signup{
+	margin-left: 10px;
+}
+
+.centro-cab{
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 120px;
+	padding-left: 25%
+	padding-right: 25%;
+}
+
+.centro-cab h1{
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+}
+
+.centro-cab h3{
+	color: white;
+}
+
+.botton-find{
+	background: red;
+	font-weight: bold;
+	font-size: 11px;
+	color: white;
+	padding: 10px 15px;
+	text-decoration: none;
+	border-radius: 20px;
+	display: inline-block;
+}
+
+@media (max-width: 500px){
+	.centro-cab{
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 0;
+	}
+	.initialbar{
+		flex-direction: column;
+	}
+	.initialbar .logo{
+		order: 2;
+		padding-bottom: 10px;
+	}
+	.initialbar nav{
+		order: 1;	
+		padding-bottom: 100px;
+	}
+
+}
